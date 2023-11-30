@@ -1,0 +1,190 @@
+html,body{
+    height: 100%;
+   margin: 0;
+}
+.header-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    background: black;
+    color: white;
+    height: 80px;
+    opacity: 0.8;
+}
+.starWars-logo{
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.starWars-logo img{
+    width: 100%;
+}
+.starWars-image{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.description-column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description-column p{
+    width: 70%;
+    font-size: 26px;
+}
+.underline{
+    text-decoration: underline;
+}
+.history-container{
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.history-container h1{
+    text-align: center;
+}
+.history-image{
+    float: left;
+    margin-right: 10px;
+}
+.history-content{
+    font-size: 26px;
+}
+.history-content ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-container{
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.bold{
+    font-weight: bold;
+}
+.footer-content{
+    display: flex;
+    width: 70%;
+    color: white;
+    text-align: center;
+    margin: 0px auto;
+    height: 70%;
+    flex-direction: column;
+    opacity: 0.5;
+}
+.footer-link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+    flex-wrap: wrap;
+}
+.footer-link-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link-column span:nth-child(2){
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.footer-link-column img:nth-child(2){
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.follow{
+    margin-bottom:10px;
+}
+.footer-link-column:nth-child(1) span,.footer-link-column:nth-child(2) span{
+    text-decoration: underline;
+}
+.navRespItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+.navRespItem div{
+    margin-bottom: 20px;
+}
+.navRespItem div:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+.navResp{
+    width: 0;
+    transition: width 2s;
+}
+#burger:hover,.navRespItem div:hover{
+    cursor: pointer;
+}
+.navBurger{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+    background: black;
+}
+.header-container div:hover{
+    cursor: pointer;
+}
+.header-container-burger{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .description-container{
+        flex-direction: column;
+    }
+    .description-column{
+        width: 100%;
+    }
+    .description-column h1{
+        text-align: center;
+    }
+    .header-container-burger{
+        display: initial;
+        position: fixed;
+        width: 100%;
+    }
+    .header-container{
+        display: none;
+    }
+    .navResp{
+        color: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 800px;
+        position: absolute;
+        padding-top: 20px;
+        padding-left: 20px;
+
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .footer-link-column{
+        margin-top: 10px;
+    }
+    .footer-container{
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
