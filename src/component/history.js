@@ -1,9 +1,9 @@
 import r2d2 from '../image/r2d2_c3p0.jpg';
 export function history(){
-    const element = document.createElement('div');
+    const element = document.createElement('section');
     element.classList.add("history-container");
     element.innerHTML="<h1>A long time ago, in the galaxy far, far away...</h1><div class='history-image'>" +
-        "<img src='"+r2d2+"'>" +
+        "<img alt='image r2d2 et c3po' src='"+r2d2+"'>" +
         "</div>" +
         "<div class='history-content'>" +
         "<p>" +

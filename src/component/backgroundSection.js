@@ -1,12 +1,8 @@
 
-import kileOren from '../image/kiloren.jpg';
 export function backgroundSection(url){
-    const element = document.createElement('div');
+    const element = document.createElement('section');
     element.classList.add("starWars-image");
+    element.classList.add("background-parallax")
     element.style.backgroundImage="url("+url+")";
-    element.style.backgroundAttachment="fixed";
-    element.style.backgroundPosition="center";
-    element.style.backgroundRepeat="no-repeat";
-    element.style.backgroundSize="cover";
     return element;
 }

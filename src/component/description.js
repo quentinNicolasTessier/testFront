@@ -1,6 +1,6 @@
 import battlefront from '../image/battlefront.jpg';
 export function description(){
-    const element = document.createElement('div');
+    const element = document.createElement('section');
     element.classList.add("description-container")
     element.innerHTML="<div class='description-column'>" +
         "<h1>Star Wars, The Force Awakens</h1>" +
@@ -37,7 +37,7 @@ export function description(){
         "</p>" +
         "</div>" +
         "<div class='description-column'>" +
-        "<img src='"+battlefront+"'>" +
+        "<img alt='image battlefront' src='"+battlefront+"'>" +
         "</div>"
     return element;
 }

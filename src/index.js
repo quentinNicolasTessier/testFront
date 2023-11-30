@@ -7,7 +7,6 @@ import kileOren from './image/kiloren.jpg'
 import stormtropper from './image/stormtroopers-2x.jpg'
 import {footer} from "./component/footer";
 import {responsiveNav} from "./component/ResponsiveNav";
-import {showRespNav} from "./component/ResponsiveNav";
 document.body.appendChild(headerComponent());
 document.body.appendChild(responsiveNav());
 document.body.appendChild(starWarsLogo());
