@@ -19,9 +19,7 @@ html,body{
     justify-content: center;
     align-items: center;
 }
-.starWars-logo img{
-    width: 100%;
-}
+
 .starWars-image{
     height: 500px;
     display: flex;
@@ -146,6 +144,11 @@ html,body{
 }
 .header-container-burger{
     display: none;
+}
+@media screen and (max-width: 750px) {
+    .starWars-logo img{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
     .description-container{
