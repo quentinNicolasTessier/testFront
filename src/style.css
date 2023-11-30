@@ -145,6 +145,9 @@ html,body{
 .header-container-burger{
     display: none;
 }
+#closeRespNav{
+    cursor: pointer;
+}
 @media screen and (max-width: 750px) {
     .starWars-logo img{
         width: 100%;
