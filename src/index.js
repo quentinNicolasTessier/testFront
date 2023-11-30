@@ -21,10 +21,12 @@ document.getElementById('burger').addEventListener('click',function(){
     document.getElementById('navResp').style.display="block";
     document.getElementById('navBurger').style.opacity="1";
     document.getElementById('navBurger').style.background="none";
+    document.body.style.overflow="hidden";
 
 })
 document.getElementById('closeRespNav').addEventListener('click',function (){
     document.getElementById('navResp').style.display="none";
     document.getElementById('navBurger').style.opacity="0.8";
     document.getElementById('navBurger').style.background="black";
+    document.body.removeAttribute('style');
 })
