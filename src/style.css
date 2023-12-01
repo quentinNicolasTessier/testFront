@@ -48,6 +48,12 @@ html,body{
     width: 70%;
     font-size: 26px;
 }
+
+.description-column img{
+    position: sticky;
+    top: 80px;
+    z-index: -1;
+}
 .underline{
     text-decoration: underline;
 }
